@@ -2,114 +2,205 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Probabilistic Feedback Control for Multi-Legged Locomotion">
+  <!-- Social preview meta (update these!) -->
+  <meta name="description" content="Probabilistic feedback control enhances multi-legged locomotion on rugged landscapes">
   <meta property="og:title" content="Probabilistic Feedback Control for Multi-Legged Locomotion"/>
-  <meta property="og:description" content="Project page for the arXiv paper on feedback control for multi-legged robots"/>
-  <meta property="og:url" content="https://YOURUSERNAME.github.io/REPO_NAME/"/>
+  <meta property="og:description" content="Project page for the arXiv paper on feedback control for multi‑legged robots"/>
+  <meta property="og:url" content="https://jamesxuu.github.io/TRO/"/>
   <meta property="og:image" content="static/images/Fig1.png" />
+  <meta name="twitter:title" content="Probabilistic Feedback Control for Multi‑Legged Locomotion">
+  <meta name="twitter:description" content="Project page for the arXiv paper on feedback control for multi‑legged robots">
+  <meta name="twitter:image" content="static/images/Fig1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="legged robotics, feedback control, probabilistic modeling">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Probabilistic Feedback Control</title>
   <link rel="icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 </head>
-
 <body>
 
-<!-- Title -->
-<section class="hero is-light">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-1">Probabilistic Feedback Control Enhances Multi-Legged Locomotion</h1>
-      <h2 class="subtitle is-4">Juntao He, Baxi Chong, Jianfeng Lin, Zhaochen Xu, Hosain Bagheri, Esteban Flores, Daniel I. Goldman</h2>
-    </div>
-  </div>
-</section>
+  <!-- Hero / Title + Authors + Links -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Probabilistic Feedback Control  
+              <br>
+              Enhances Multi‑Legged Locomotion
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="#" target="_blank">Juntao He</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Baxi Chong</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Jianfeng Lin</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Zhaochen Xu</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Hosain Bagheri</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Esteban Flores</a>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Daniel I. Goldman</a>
+              </span>
+            </div>
 
-<!-- Summary Video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Summary Video</h2>
-      <div class="columns is-centered">
-        <div class="column is-three-quarters">
-          <div class="video-container">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/nWu7U5xZqbo" frameborder="0" allowfullscreen></iframe>
+            <!-- Buttons to PDF, ArXiv, Code -->
+            <div class="publication-links" style="margin-top:1rem;">
+              <span class="link-block">
+                <a href="static/pdfs/Centipede_TRO_paper_v2.pdf" target="_blank"
+                   class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Download PDF</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2411.07183" target="_blank"
+                   class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>View on arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/jamesxuu/TRO" target="_blank"
+                   class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Abstract -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Abstract</h2>
-    <div class="content has-text-justified">
-      <p>
-        Achieving robust legged locomotion on complex terrains poses challenges due to uncertainty in robot-environment interactions.
-        We propose a probabilistic feedback control strategy for multi-legged robots that improves locomotion speed and stability across lab and outdoor rough terrain.
-        We use vertical body undulation as a control parameter, guided by binary foot-ground contact sensors, to mitigate environmental disturbance.
-        Experiments on 8- and 12-legged robots show 30–60% improvement in speed with reduced variance.
-      </p>
-      <p>
-        📄 <a href="static/pdfs/Centipede_TRO_paper_v2.pdf" target="_blank">Download PDF</a><br>
-        🔗 <a href="https://arxiv.org/pdf/2411.07183" target="_blank">View on arXiv</a>
-      </p>
+  <!-- Summary Video -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="video-container">
+          <iframe width="100%" height="450"
+                  src="https://www.youtube.com/embed/nWu7U5xZqbo"
+                  frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Figures -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Figures</h2>
-    <div class="content">
-
-      <!-- Repeat this block for Fig1 to Fig14 -->
-      <figure>
-        <img src="static/images/Fig1.png" alt="Fig 1">
-        <figcaption><strong>Fig 1:</strong> Description for Figure 1</figcaption>
-      </figure>
-
-      <figure>
-        <img src="static/images/Fig2.png" alt="Fig 2">
-        <figcaption><strong>Fig 2:</strong> Description for Figure 2</figcaption>
-      </figure>
-
-      <!-- ... -->
-      <figure>
-        <img src="static/images/Fig14.png" alt="Fig 14">
-        <figcaption><strong>Fig 14:</strong> Description for Figure 14</figcaption>
-      </figure>
-
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          Achieving robust legged locomotion on complex terrains poses challenges due to uncertainty in robot–environment interactions.
+          We propose a probabilistic feedback control strategy for multi-legged robots that improves locomotion speed and stability across lab and outdoor rough terrain.
+          We use vertical body undulation as a control parameter, guided by binary foot–ground contact sensors, to mitigate environmental disturbance.
+          Experiments on 8‑ and 12‑legged robots show 30–60 % improvement in speed with reduced variance.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- BibTeX -->
-<section class="section">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX Citation</h2>
-    <pre><code>@article{he2025locomotion,
-  title={Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes},
-  author={He, Juntao and Chong, Baxi and Lin, Jianfeng and Xu, Zhaochen and Bagheri, Hosain and Flores, Esteban and Goldman, Daniel I.},
-  journal={arXiv preprint arXiv:2411.07183},
-  year={2025}
-}</code></pre>
-  </div>
-</section>
+  <!-- Introduction -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Introduction</h2>
+      <div class="content has-text-justified">
+        <p>
+          Legged robots excel in unstructured environments but often rely on heavy sensing for stability.
+          Multi-legged systems, with inherent morphological redundancy, can traverse rugged terrains with minimal sensing.
+          Prior work demonstrated open-loop locomotion on noisy landscapes but at slow speeds.
+          We aim to enhance speed via a simple feedback mechanism using binary foot–ground contact sensing.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>.
-    </p>
-  </div>
-</footer>
+  <!-- Methods -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Methods</h2>
+      <div class="content has-text-justified">
+        <p>
+          We built a modular multi‐legged robophysical platform with compliant legs and vertical/lateral body joints.
+          Each module provides horizontal swing, vertical pitching, and leg lifting.
+          Binary capacitive sensors at each toe detect contact.
+          Gaits combine sinusoidal body undulation and leg stepping.
+          A proportional controller adjusts vertical wave amplitude each cycle based on real-time contact ratio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          Probabilistic models predict a linear correlation between contact ratio γ and forward speed.
+          Lab tests on terrains with varying rugosity show vertical undulation boosts γ and speed by up to 30 %.
+          Feedback control yields 50–60 % speed gains and 30–50 % variance reduction vs. open‐loop.
+          Outdoor trials on mixed boulder, mud, leaves, and grass terrain achieved similar improvements.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Conclusion</h2>
+      <div class="content has-text-justified">
+        <p>
+          We demonstrated that simple feedback of vertical body amplitude—based solely on binary foot contact—significantly enhances
+          multi‐legged robot locomotion on rugged landscapes. Our probabilistic models guided controller design,
+          and extensive lab and field experiments confirmed 30–60 % speed gains. This low‐sensor framework
+          holds promise for scalable, robust legged robots in real‐world applications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">References</h2>
+      <div class="content">
+        <ol>
+          <li>He J., Chong B., Lin J., Xu Z., Bagheri H., Flores E., Goldman D. I. “Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes.” arXiv:2411.07183, 2024.</li>
+          <li>Chong B. et al. “Multi-legged locomotion without sensors.” Science, 2023.</li>
+          <li>Ozkan‐Angin G. et al. “Systematic design of compliant legs.” Robotics: Science and Systems, 2020.</li>
+          <!-- add more as needed -->
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
+          Academic Project Page Template</a>.  
+          Licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+          CC BY‑SA 4.0</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
