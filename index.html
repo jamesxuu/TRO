@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
-  <!-- Google Analytics (optional) -->
+  <!-- Analytics (optional) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,9 +39,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </a>
     </div>
     <div class="navbar-menu">
@@ -61,23 +59,17 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Probabilistic Feedback Control Enhances Multi-Legged Locomotion</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=yFyLA04AAAAJ&hl=en">Juntao He</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://sites.gatech.edu/baxichong/">Baxi Chong</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=nPMwHFoAAAAJ&hl=en">Jianfeng Lin</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=6tmR47MAAAAJ&hl=en">Zhaochen Xu</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?hl=en&user=r7wE4M4AAAAJ&view_op=list_works&sortby=pubdate">Daniel I. Goldman</a>
-              </span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=yFyLA04AAAAJ&hl=en">Juntao He</a>,</span>
+              <span class="author-block"><a href="https://sites.gatech.edu/baxichong/">Baxi Chong</a>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=nPMwHFoAAAAJ&hl=en">Jianfeng Lin</a>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=6tmR47MAAAAJ&hl=en">Zhaochen Xu</a>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=YgRJTVEAAAAJ&hl=en">Hosain Bagheri</a>,</span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/esteban-flores27/">Esteban Flores</a>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?hl=en&user=r7wE4M4AAAAJ&view_op=list_works&sortby=pubdate">Daniel I. Goldman</a></span>
             </div>
-            <div class="column has-text-centered">
+            <div class="publication-affiliation is-size-6">Georgia Institute of Technology</div>
+            <div class="publication-journal is-size-6">IEEE Transactions on Robotics (T‑RO)</div>
+            <div class="column has-text-centered" style="margin-top:1rem;">
               <div class="publication-links">
                 <span class="link-block">
                   <a href="static/pdfs/Centipede_TRO_paper_v2.pdf" class="external-link button is-normal is-rounded is-dark">
@@ -123,10 +115,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Achieving robust legged locomotion on complex terrains poses challenges due to uncertainty in robot-environment interactions.
-              We propose a probabilistic feedback control strategy for multi-legged robots that improves locomotion speed and stability across lab and outdoor rough terrain.
-              We use vertical body undulation as a control parameter, guided by binary foot-ground contact sensors, to mitigate environmental disturbance.
-              Experiments on 8- and 12-legged robots show 30–60% improvement in speed with reduced variance.
+              Achieving robust legged locomotion on complex terrains poses challenges due to the high uncertainty in robot-environment interactions. Recent advances in bipedal and quadrupedal robots demonstrate good mobility on rugged terrains but rely heavily on sensors for stability due to low static stability from a high center of mass and a narrow base of support [1]. We hypothesize that a multi-legged robotic system can leverage morphological redundancy from additional legs to minimize sensing requirements when traversing challenging terrains. Studies suggest [2], [3] that a multi-legged system with sufficient legs can reliably navigate noisy landscapes without sensing and control, albeit at a low speed of up to 0.1 body lengths per cycle (BLC). However, the feedback control framework to enhance speed of multi-legged robots on challenging terrains remains underexplored due to diverse environmental interactions. Such complexity makes it difficult to identify the key parameters to control in these high-degree-of-freedom systems. Here, in laboratory and field experiments we demonstrate that a vertical body undulation wave helps to mitigate environmental disturbances affecting robot speed; these observations are supported by a probabilistic model. Using such insights, we introduce a control framework which monitors foot-ground contact patterns on rugose landscapes using binary foot-ground contact sensors to estimate terrain rugosity. The controller adjusts the vertical body wave based on the deviation of the limb’s averaged actual-to-ideal foot-ground contact ratio, achieving a significant enhancement of up to 0.235 BLC on rugose laboratory terrain. We observed a 50% to 60% increase in speed and a 30% to 50% reduction in speed variance compared to the open-loop controller. Additionally, the controller operates in complex terrains outside the lab, including pine straw, robot-sized rocks, mud, and leaves.
             </p>
           </div>
         </div>
@@ -139,19 +128,48 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div id="figures-carousel" class="carousel results-carousel">
-          <!-- Repeat this block for Fig1 to Fig14 -->
+          <!-- Fig1 through Fig14 -->
           <div class="item">
-            <figure>
-              <img src="./static/images/Fig1.png" alt="Fig 1">
-              <figcaption class="has-text-centered"><strong>Fig 1:</strong> Description for Figure 1</figcaption>
-            </figure>
+            <figure><img src="./static/images/Fig1.png" alt="Fig 1"><figcaption class="has-text-centered"><strong>Fig 1:</strong> Description for Figure 1</figcaption></figure>
           </div>
-          <!-- ... -->
           <div class="item">
-            <figure>
-              <img src="./static/images/Fig14.png" alt="Fig 14">
-              <figcaption class="has-text-centered"><strong>Fig 14:</strong> Description for Figure 14</figcaption>
-            </figure>
+            <figure><img src="./static/images/Fig2.png" alt="Fig 2"><figcaption class="has-text-centered"><strong>Fig 2:</strong> Description for Figure 2</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig3.png" alt="Fig 3"><figcaption class="has-text-centered"><strong>Fig 3:</strong> Description for Figure 3</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig4.png" alt="Fig 4"><figcaption class="has-text-centered"><strong>Fig 4:</strong> Description for Figure 4</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig5.png" alt="Fig 5"><figcaption class="has-text-centered"><strong>Fig 5:</strong> Description for Figure 5</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig6.png" alt="Fig 6"><figcaption class="has-text-centered"><strong>Fig 6:</strong> Description for Figure 6</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig7.png" alt="Fig 7"><figcaption class="has-text-centered"><strong>Fig 7:</strong> Description for Figure 7</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig8.png" alt="Fig 8"><figcaption class="has-text-centered"><strong>Fig 8:</strong> Description for Figure 8</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig9.png" alt="Fig 9"><figcaption class="has-text-centered"><strong>Fig 9:</strong> Description for Figure 9</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig10.png" alt="Fig 10"><figcaption class="has-text-centered"><strong>Fig 10:</strong> Description for Figure 10</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig11.png" alt="Fig 11"><figcaption class="has-text-centered"><strong>Fig 11:</strong> Description for Figure 11</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig12.png" alt="Fig 12"><figcaption class="has-text-centered"><strong>Fig 12:</strong> Description for Figure 12</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig13.png" alt="Fig 13"><figcaption class="has-text-centered"><strong>Fig 13:</strong> Description for Figure 13</figcaption></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./static/images/Fig14.png" alt="Fig 14"><figcaption class="has-text-centered"><strong>Fig 14:</strong> Description for Figure 14</figcaption></figure>
           </div>
         </div>
       </div>
@@ -164,7 +182,7 @@
       <h2 class="title">BibTeX Citation</h2>
       <pre><code>@article{he2025locomotion,
   title={Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes},
-  author={He, Juntao and Chong, Baxi and Lin, Jianfeng and Xu, Zhaochen and Goldman, Daniel I.},
+  author={He, Juntao and Chong, Baxi and Lin, Jianfeng and Xu, Zhaochen and Bagheri, Hosain and Flores, Esteban and Goldman, Daniel I.},
   journal={arXiv preprint arXiv:2411.07183},
   year={2025}
 }</code></pre>
