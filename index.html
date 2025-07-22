@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Probabilistic Feedback Control for Multi-Legged Locomotion">
-  <meta property="og:title" content="Probabilistic Feedback Control for Multi-Legged Locomotion"/>
-  <meta property="og:description" content="Project page for the arXiv paper on feedback control for multi-legged robots"/>
-  <meta property="og:url" content="https://YOURUSERNAME.github.io/REPO_NAME/"/>
-  <meta property="og:image" content="static/images/Fig1.png" />
+  <meta name="keywords" content="probabilistic feedback control, multi-legged locomotion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Probabilistic Feedback Control</title>
+  <title>Probabilistic Feedback Control for Multi-Legged Locomotion</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text x='0' y='14'>🤖</text></svg>">
+
+  <!-- Google Fonts & Styles -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -16,8 +16,17 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="static/images/favicon.ico">
 
+  <!-- Google Analytics (optional) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -52,13 +61,37 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Probabilistic Feedback Control Enhances Multi-Legged Locomotion</h1>
             <div class="is-size-5 publication-authors">
-              <a href="#" class="button is-link is-small is-rounded">Juntao He</a>
-              <a href="#" class="button is-link is-small is-rounded">Baxi Chong</a>
-              <a href="#" class="button is-link is-small is-rounded">Jianfeng Lin</a>
-              <a href="#" class="button is-link is-small is-rounded">Zhaochen Xu</a>
-              <a href="#" class="button is-link is-small is-rounded">Hosain Bagheri</a>
-              <a href="#" class="button is-link is-small is-rounded">Esteban Flores</a>
-              <a href="#" class="button is-link is-small is-rounded">Daniel I. Goldman</a>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=yFyLA04AAAAJ&hl=en">Juntao He</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.gatech.edu/baxichong/">Baxi Chong</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=nPMwHFoAAAAJ&hl=en">Jianfeng Lin</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6tmR47MAAAAJ&hl=en">Zhaochen Xu</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=r7wE4M4AAAAJ&view_op=list_works&sortby=pubdate">Daniel I. Goldman</a>
+              </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/Centipede_TRO_paper_v2.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Download PDF</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2411.07183" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>View on arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -67,13 +100,13 @@
   </section>
 
   <!-- Summary Video -->
-  <section class="hero is-small is-light">
+  <section class="hero teaser is-light is-small">
     <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3 has-text-centered">Summary Video</h2>
-        <div class="columns is-centered">
-          <div class="column is-three-quarters">
-            <div class="video-container">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Summary Video</h2>
+            <div class="publication-video">
               <iframe width="100%" height="450" src="https://www.youtube.com/embed/nWu7U5xZqbo" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
@@ -85,47 +118,41 @@
   <!-- Abstract -->
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Abstract</h2>
-      <div class="content has-text-justified">
-        <p>
-          Achieving robust legged locomotion on complex terrains poses challenges due to uncertainty in robot-environment interactions.
-          We propose a probabilistic feedback control strategy for multi-legged robots that improves locomotion speed and stability across lab and outdoor rough terrain.
-          We use vertical body undulation as a control parameter, guided by binary foot-ground contact sensors, to mitigate environmental disturbance.
-          Experiments on 8- and 12-legged robots show 30–60% improvement in speed with reduced variance.
-        </p>
-        <p>
-          📄 <a href="static/pdfs/Centipede_TRO_paper_v2.pdf" target="_blank">Download PDF</a><br>
-          🔗 <a href="https://arxiv.org/pdf/2411.07183" target="_blank">View on arXiv</a>
-        </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Achieving robust legged locomotion on complex terrains poses challenges due to uncertainty in robot-environment interactions.
+              We propose a probabilistic feedback control strategy for multi-legged robots that improves locomotion speed and stability across lab and outdoor rough terrain.
+              We use vertical body undulation as a control parameter, guided by binary foot-ground contact sensors, to mitigate environmental disturbance.
+              Experiments on 8- and 12-legged robots show 30–60% improvement in speed with reduced variance.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Figures Carousel -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Figures</h2>
-      <div id="figures-carousel" class="carousel">
-        <!-- Slide items -->
-        <div class="item">
-          <figure>
-            <img src="./static/images/Fig1.png" alt="Fig 1">
-            <figcaption class="has-text-centered"><strong>Fig 1:</strong> Description for Figure 1</figcaption>
-          </figure>
-        </div>
-        <!-- Repeat .item block for each figure -->
-        <div class="item">
-          <figure>
-            <img src="./static/images/Fig2.png" alt="Fig 2">
-            <figcaption class="has-text-centered"><strong>Fig 2:</strong> Description for Figure 2</figcaption>
-          </figure>
-        </div>
-        <!-- ... up to Fig14 -->
-        <div class="item">
-          <figure>
-            <img src="./static/images/Fig14.png" alt="Fig 14">
-            <figcaption class="has-text-centered"><strong>Fig 14:</strong> Description for Figure 14</figcaption>
-          </figure>
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div id="figures-carousel" class="carousel results-carousel">
+          <!-- Repeat this block for Fig1 to Fig14 -->
+          <div class="item">
+            <figure>
+              <img src="./static/images/Fig1.png" alt="Fig 1">
+              <figcaption class="has-text-centered"><strong>Fig 1:</strong> Description for Figure 1</figcaption>
+            </figure>
+          </div>
+          <!-- ... -->
+          <div class="item">
+            <figure>
+              <img src="./static/images/Fig14.png" alt="Fig 14">
+              <figcaption class="has-text-centered"><strong>Fig 14:</strong> Description for Figure 14</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
@@ -137,7 +164,7 @@
       <h2 class="title">BibTeX Citation</h2>
       <pre><code>@article{he2025locomotion,
   title={Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes},
-  author={He, Juntao and Chong, Baxi and Lin, Jianfeng and Xu, Zhaochen and Bagheri, Hosain and Flores, Esteban and Goldman, Daniel I.},
+  author={He, Juntao and Chong, Baxi and Lin, Jianfeng and Xu, Zhaochen and Goldman, Daniel I.},
   journal={arXiv preprint arXiv:2411.07183},
   year={2025}
 }</code></pre>
@@ -146,10 +173,10 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
+    <div class="container">
+      <div class="content has-text-centered">
         Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>.
-      </p>
+      </div>
     </div>
   </footer>
 
